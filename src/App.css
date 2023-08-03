@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.App {
+  border: 10px solid gray;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 50px;
+  scale: 0.9;
+}
+
+.Header {
+  display: flex;
+  border-bottom: 5px solid gray;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.Header .Header_Date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Header .Header_Weather {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Header .Header_Weather .Weather {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Header .Header_Weather .Weather button {
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: -9;
+}
+.Header .Header_Weather .Weather button:hover {
+  opacity: 0.5;
+}
+
+.DiaryEditor {
+  position: relative;
+}
+.DiaryEditor .nameInput {
+  padding: 15px 30px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.DiaryEditor .nameInput input {
+  width: 150px;
+  margin-left: 30px;
+  padding: 10px 30px;
+  padding-right: 0;
+  border: 5px solid gray;
+  font-size: 20px;
+}
+.DiaryEditor .nameInput > div {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.DiaryEditor .nameInput select {
+  padding: 10px 30px;
+  font-size: 20px;
+  outline: none;
+  border: 5px solid gray;
+}
+
+.DiaryEditor textarea {
+  /* position: absolute; */
+  top: 300px;
+  width: 94.5%;
+  resize: none;
+  border: 5px solid gray;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  padding: 20px;
+  height: 400px;
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+}
+.DiaryEditor textarea:focus::placeholder {
+  opacity: 0;
+}
+.DiaryEditor button {
+  width: 100%;
+  border: none;
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  transform: translateY(-5px);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.DiaryEditor button:hover {
+  background-color: rgb(97, 97, 97);
+}
+
+.DiaryList {
+  padding: 0 20px;
+}
+.DiaryList .listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid gray;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.DiaryList h2 {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+.DiaryList h4 {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.DiaryList h4 span {
+  font-weight: bold;
+  color: crimson;
+}
+
+.DiaryItem {
+  padding: 20px 50px;
+  border-bottom: 5px solid gray;
+}
+.DiaryItem .itemInfo span {
+  color: crimson;
+  font-weight: bold;
+}
+.DiaryItem .itemName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.DiaryItem .itemName span {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  transform: translateY(-25px);
+}
+.DiaryItem .itemName span:last-child {
+  font-size: 60px;
+  border: 5px solid gray;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+.DiaryItem .itemTime {
+  transform: translateY(-50px);
+}
+.DiaryItem .itemContent {
+  margin-top: 20px;
+  padding: 20px 0;
+  font-size: 20px;
+  transform: translateY(-50px);
+}
+.DiaryItem .itemBtn {
+  text-align: right;
+}
+.DiaryItem .itemBtn button {
+  padding: 5px 20px;
+  margin: 0 10px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.WeatherBtn_on_1,
+.WeatherBtn_on_2,
+.WeatherBtn_on_3,
+.WeatherBtn_on_4 {
+  border: 5px dashed red;
+  border-radius: 50%;
+}
